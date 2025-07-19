@@ -1,1 +1,1 @@
-just run the file from index.html
+This GitHub is for learning and building experience
