@@ -22,12 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  transform: translateX(0%);
   max-width: 300px;
   width: 100%;
-  background-color: white;
   border-radius: 24px;
-  padding: 25px;
   box-shadow: 0 5px 10px;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
 }
 
 .image {
@@ -36,8 +40,8 @@ body {
   height: 150px;
   border-radius: 50%;
   padding: 3px;
-  background-color: rgb(0, 220, 255);
   margin-bottom: 5px;
+  background-color: rgb(0, 220, 255);
 }
 
 .image .profile-img {
@@ -70,8 +74,18 @@ body {
   font-weight: 400;
 }
 
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
 .media .link {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -81,7 +95,48 @@ body {
   width: 30px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+button {
+  background: black;
   color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 6px 12px;
+}
+
+.extra {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  width: 90vh;
+  height: 50vh;
+  transform: translateX(20%);
+  border-radius: 24px;
+  box-shadow: 0 5px 10px;
+  background: rgb(255, 255, 255);
+}
+
+#close {
+  position: absolute;
+  top: 73.6%;
+}
+
+.profile-card.activate {
+  transform: translateX(-125%);
+}
+
+.extra.activate {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .block {
