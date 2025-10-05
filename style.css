@@ -22,14 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   position: relative;
   overflow: hidden;
+  transition: transform 0.4s ease;
+  transform: translateX(0%);
   max-width: 300px;
   width: 100%;
   border-radius: 24px;
-  padding: 25px;
   box-shadow: 0 5px 10px;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
 }
 
 .image {
@@ -38,8 +40,8 @@ body {
   height: 150px;
   border-radius: 50%;
   padding: 3px;
-  background-color: rgb(0, 220, 255);
   margin-bottom: 5px;
+  background-color: rgb(0, 220, 255);
 }
 
 .image .profile-img {
@@ -112,16 +114,29 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.4s;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: rgb(238, 238, 238);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  width: 90vh;
+  height: 50vh;
+  transform: translateX(20%);
+  border-radius: 24px;
+  box-shadow: 0 5px 10px;
+  background: rgb(255, 255, 255);
 }
 
-.profile-card.activate .extra {
-  left: 0;
+#close {
+  position: absolute;
+  top: 73.6%;
+}
+
+.profile-card.activate {
+  transform: translateX(-125%);
+}
+
+.extra.activate {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .block {
