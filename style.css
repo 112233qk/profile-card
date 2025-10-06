@@ -10,6 +10,14 @@
   font-style: normal;
 }
 
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -125,6 +133,18 @@ button {
   background: rgb(255, 255, 255);
 }
 
+.quote {
+  transform: scale(0.9) translateY(380%);
+}
+
+.quote .quoter {
+  transform: translateX(77%);
+}
+
+.quote .quoter .merriweather {
+  font-weight: 700;
+}
+
 #close {
   position: absolute;
   top: 73.6%;
@@ -153,12 +173,4 @@ button {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-}
-
-@media (max-width: 600px) {
-  .block {
-    top: -20vh;
-    height: 70vh;
-    width: 6vw;
-  }
 }
