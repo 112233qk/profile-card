@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(53, 53, 53);
 }
 
 .profile-card {
@@ -166,11 +166,11 @@ button {
   justify-content: center;
   height: 50vw;
   width: 3vw;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   z-index: -1;
   left: 10vw;
   top: -40vh;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
