@@ -1,15 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".profile-card");
-  const extra = document.querySelector(".extra");
-  const toggleBtn = document.getElementById("toggle");
-  const closeBtn = document.getElementById("close");
+const toggleBtn = document.getElementById('toggle');
+const closeBtn = document.getElementById('close');
+const extraCard = document.getElementById('extraCard');
 
-  toggleBtn.onclick = () => {
-    card.classList.add("activate");
-    extra.classList.add("activate");
-  };
-  closeBtn.onclick = () => {
-    card.classList.remove("activate");
-    extra.classList.remove("activate");
-  };
+toggleBtn.addEventListener('click', () => {
+  extraCard.scrollIntoView({ 
+    behavior: 'smooth', 
+    block: 'start' 
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });

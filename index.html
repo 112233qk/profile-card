@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Profile card</title>
-  </head>
 
-  <body>
-    <div class="profile-card">
-      <div class="image">
-        <img src="profile.jpg" alt="My Face" class="profile-img" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Profile card</title>
+</head>
 
-      <div class="text-data">
-        <span class="name">QK</span>
-        <span class="job">student</span>
-      </div>
-
-      <div class="media">
-        <a href="https://www.tiktok.com/@112233qk" class="link">
-          <i class="bx bxl-tiktok"></i>
-        </a>
-        <button id="toggle">More</button>
-        <a href="https://www.instagram.com/112233qk/" class="link">
-          <i class="bx bxl-instagram"></i>
-        </a>
-      </div>
+<body>
+  <div class="profile-card" id="profileCard">
+    <div class="image">
+      <img src="profile.jpg" alt="My Face" class="profile-img" />
     </div>
-    <div class="extra">
-      <p>high school student trying to learn software development</p>
+
+    <div class="text-data">
+      <span class="name">QK</span>
+      <span class="job">student</span>
+    </div>
+
+    <div class="media">
+      <a href="https://www.tiktok.com/@112233qk" class="link">
+        <i class="bx bxl-tiktok"></i>
+      </a>
+      <button id="toggle">More</button>
+      <a href="https://www.instagram.com/112233qk/" class="link">
+        <i class="bx bxl-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="extra" id="extraCard">
+    <div id="description">
+      <p>Dari SMK Ibaddurahman yang berdedikasi tinggi dan memiliki minat besar di bidang
+        perangkat keras (hardware) dan perangkat lunak (software) komputer,serta
+        pemrograman. Memiliki pemahaman kuat mengenai komponen laptop/komputer,
+        instalasi sistem, troubleshooting, serta dasar pemrograman JavaScript (Front-End).
+        Berbekal pengalaman praktik selama 2 tahun di lingkungan sekolah, saya siap
+        memberikan pelayanan terbaik, membantu pelanggan memilih perangkat yang tepat,
+        serta menangani kendala teknis di toko laptop Anda.</p>
       <div class="quote">
         <p class="merriweather">
           “Those who can imagine anything, can create the impossible”
@@ -49,9 +52,11 @@
           <p class="merriweather">-alan turing</p>
         </div>
       </div>
-      <button id="close">back</button>
     </div>
+    <button id="close">back</button>
+  </div>
 
-    <div class="block"></div>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
