@@ -12,6 +12,69 @@ body {
   padding: 0 20px;
 }
 
+/* SECTION ANIMATIONS */
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Animations */
+.card-animate {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Staggered delay for cards */
+.project-card:nth-child(1).card-animate.visible {
+  transition-delay: 0.1s;
+}
+.project-card:nth-child(2).card-animate.visible {
+  transition-delay: 0.2s;
+}
+.project-card:nth-child(3).card-animate.visible {
+  transition-delay: 0.3s;
+}
+
+.skill-category:nth-child(1).card-animate.visible {
+  transition-delay: 0.1s;
+}
+.skill-category:nth-child(2).card-animate.visible {
+  transition-delay: 0.2s;
+}
+.skill-category:nth-child(3).card-animate.visible {
+  transition-delay: 0.3s;
+}
+
+.timeline-item.card-animate.visible {
+  transition-delay: 0.1s;
+}
+
+/* Optional: Different animation for hero */
+.hero.section-animate {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero.section-animate.visible {
+  transform: translateY(0) scale(1);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER */
 header {
   display: flex;

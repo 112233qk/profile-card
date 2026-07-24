@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
@@ -25,7 +29,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero section-animate">
       <h1>Building digital experiences</h1>
       <p class="summary">Front-End Developer based in Sukabumi</p>
 
@@ -55,15 +59,12 @@
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="projects" id="projects">
+    <section class="projects section-animate" id="projects">
       <h2>Featured Projects</h2>
       <div class="project-grid">
-        <div class="project-card">
+        <div class="project-card card-animate">
           <div class="project-image">
-            <img
-              src="https://via.placeholder.com/600x400/2a2a2a/666?text=Project+One"
-              alt="Project One"
-            />
+            <img src="front_end.jpg" alt="Cool Website" />
           </div>
           <h3>Front-End</h3>
           <div class="tech-stack">
@@ -75,7 +76,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card card-animate">
           <div class="project-image">
             <video autoplay loop muted playsinline class="card-video">
               <source src="video_editing.mp4" type="video/mp4" />
@@ -93,9 +94,9 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card card-animate">
           <div class="project-image">
-            <img src="photo_editing.jpeg" alt="Project Three" />
+            <img src="cinematograhy.jpeg" alt="Project Three" />
           </div>
           <h3>Cinematography</h3>
           <div class="tech-stack">
@@ -111,10 +112,10 @@
     </section>
 
     <!-- SKILLS & TECH STACK -->
-    <section class="skills">
+    <section class="skills section-animate">
       <h2>Skills & Tech Stack</h2>
       <div class="skills-grid">
-        <div>
+        <div class="skill-category card-animate">
           <h4>Hardware</h4>
           <div class="skill-badges">
             <span>Perakitan PC</span>
@@ -122,7 +123,7 @@
             <span>Komponen Laptop/Komputer</span>
           </div>
         </div>
-        <div>
+        <div class="skill-category card-animate">
           <h4>Software</h4>
           <div class="skill-badges">
             <span>Instalasi OS</span>
@@ -130,7 +131,7 @@
             <span>Troubleshooting Software</span>
           </div>
         </div>
-        <div>
+        <div class="skill-category card-animate">
           <h4>Programming</h4>
           <div class="skill-badges">
             <span>JavaScript (Front-End)</span>
@@ -142,11 +143,11 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="experience">
+    <section class="experience section-animate">
       <h2>Experience</h2>
 
       <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item card-animate">
           <h3>SMK Ibaddurahman</h3>
           <p class="company">Siswa Praktik Mandiri & Laboratorium</p>
           <p class="date">Juli 2024 – 2026 (2 Tahun)</p>
@@ -176,7 +177,7 @@
     </section>
 
     <!-- CONTACT / FOOTER -->
-    <footer id="contact">
+    <footer id="contact" class="section-animate">
       <h2>Contact</h2>
       <p>Email: satrio.subakti77@gmail.com</p>
       <div class="social-links">
@@ -191,5 +192,7 @@
       </div>
       <p class="copyright">&copy; 2026 Satrio Subakti. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
