@@ -1,62 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header>
+      <div class="logo">Satrio Subakti</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Profile card</title>
-</head>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Building digital experiences</h1>
+      <p class="summary">Front-End Developer based in Sukabumi</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+    </section>
 
-<body>
-  <div class="profile-card" id="profileCard">
-    <div class="image">
-      <img src="profile.jpg" alt="My Face" class="profile-img" />
-    </div>
-
-    <div class="text-data">
-      <span class="name">QK</span>
-      <span class="job">student</span>
-    </div>
-
-    <div class="media">
-      <a href="https://www.tiktok.com/@112233qk" class="link">
-        <i class="bx bxl-tiktok"></i>
-      </a>
-      <button id="toggle">More</button>
-      <a href="https://www.instagram.com/112233qk/" class="link">
-        <i class="bx bxl-instagram"></i>
-      </a>
-    </div>
-  </div>
-
-  <div class="extra" id="extraCard">
-    <div id="description">
-      <p>Dari SMK Ibaddurahman yang berdedikasi tinggi dan memiliki minat besar di bidang
-        perangkat keras (hardware) dan perangkat lunak (software) komputer,serta
-        pemrograman. Memiliki pemahaman kuat mengenai komponen laptop/komputer,
-        instalasi sistem, troubleshooting, serta dasar pemrograman JavaScript (Front-End).
-        Berbekal pengalaman praktik selama 2 tahun di lingkungan sekolah, saya siap
-        memberikan pelayanan terbaik, membantu pelanggan memilih perangkat yang tepat,
-        serta menangani kendala teknis di toko laptop Anda.</p>
-      <div class="quote">
-        <p class="merriweather">
-          “Those who can imagine anything, can create the impossible”
-        </p>
-        <div class="quoter">
-          <p class="merriweather">-alan turing</p>
+    <!-- FEATURED PROJECTS -->
+    <section class="projects" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">Screenshot</div>
+          <h3>Project One</h3>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Site</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">Screenshot</div>
+          <h3>Project Two</h3>
+          <div class="tech-stack">
+            <span>Vue.js</span>
+            <span>Firebase</span>
+            <span>Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Site</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">Screenshot</div>
+          <h3>Project Three</h3>
+          <div class="tech-stack">
+            <span>Angular</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Site</a>
+            <a href="#">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
-    <button id="close">back</button>
-  </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- SKILLS & TECH STACK -->
+    <section class="skills">
+      <h2>Skills & Tech Stack</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Front-End</h4>
+          <div class="skill-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Vue.js</span>
+            <span>Tailwind</span>
+          </div>
+        </div>
+        <div>
+          <h4>Back-End</h4>
+          <div class="skill-badges">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Python</span>
+            <span>Django</span>
+          </div>
+        </div>
+        <div>
+          <h4>Database</h4>
+          <div class="skill-badges">
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <div class="skill-badges">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Front-End Developer</h3>
+          <p class="company">Tech Company — 2023–Present</p>
+          <p class="description">
+            Built responsive web applications and collaborated with design
+            teams.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Junior Developer</h3>
+          <p class="company">Startup Inc. — 2021–2023</p>
+          <p class="description">
+            Developed and maintained client-facing features.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="btn primary">Download Resume</a>
+      <div class="testimonials">
+        <blockquote>
+          "Great developer with strong attention to detail."
+          <cite>— Client Name</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Email: your@email.com</p>
+      <div class="social-links">
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
