@@ -6,73 +6,15 @@
 
 body {
   font-family: "Inter", -apple-system, sans-serif;
-  background: #0a0a0a;
+   background: linear-gradient(135deg, 
+    #0a0a0a 0%,           
+    #101a30 30%,         
+    #182540 60%,        
+    #0c1425 90%         
+);
   color: #ffffff;
   line-height: 1.6;
   padding: 0 20px;
-}
-
-/* SECTION ANIMATIONS */
-.section-animate {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-animate.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Card Animations */
-.card-animate {
-  opacity: 0;
-  transform: translateY(30px) scale(0.95);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-animate.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* Staggered delay for cards */
-.project-card:nth-child(1).card-animate.visible {
-  transition-delay: 0.1s;
-}
-.project-card:nth-child(2).card-animate.visible {
-  transition-delay: 0.2s;
-}
-.project-card:nth-child(3).card-animate.visible {
-  transition-delay: 0.3s;
-}
-
-.skill-category:nth-child(1).card-animate.visible {
-  transition-delay: 0.1s;
-}
-.skill-category:nth-child(2).card-animate.visible {
-  transition-delay: 0.2s;
-}
-.skill-category:nth-child(3).card-animate.visible {
-  transition-delay: 0.3s;
-}
-
-.timeline-item.card-animate.visible {
-  transition-delay: 0.1s;
-}
-
-/* Optional: Different animation for hero */
-.hero.section-animate {
-  transform: translateY(0) scale(0.98);
-}
-
-.hero.section-animate.visible {
-  transform: translateY(0) scale(1);
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -80,10 +22,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 20px 30px;  
+  max-width: 100%;     
+  margin: 0;          
+  border-radius: 0; 
   border-bottom: 1px solid #2a2a2a;
+  background-color: #161F30;
 }
 
 .logo {
@@ -271,10 +215,13 @@ h2 {
 }
 
 /* Optional hover effect */
-.project-image:hover img,
-.project-image:hover video {
+.project-image:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.project-image:hover video {
+  filter: brightness(1.1);
 }
 
 .project-image img,
@@ -453,6 +400,69 @@ footer p {
   font-size: 13px;
   color: #666;
   margin-top: 20px;
+}
+
+/* SECTION ANIMATIONS */
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Animations */
+.card-animate {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Staggered delay for cards */
+.project-card:nth-child(1).card-animate.visible {
+  transition-delay: 0.1s;
+}
+.project-card:nth-child(2).card-animate.visible {
+  transition-delay: 0.2s;
+}
+.project-card:nth-child(3).card-animate.visible {
+  transition-delay: 0.3s;
+}
+
+.skill-category:nth-child(1).card-animate.visible {
+  transition-delay: 0.1s;
+}
+.skill-category:nth-child(2).card-animate.visible {
+  transition-delay: 0.2s;
+}
+.skill-category:nth-child(3).card-animate.visible {
+  transition-delay: 0.3s;
+}
+
+.timeline-item.card-animate.visible {
+  transition-delay: 0.1s;
+}
+
+/* Optional: Different animation for hero */
+.hero.section-animate {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero.section-animate.visible {
+  transform: translateY(0) scale(1);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
 /* RESPONSIVE */
